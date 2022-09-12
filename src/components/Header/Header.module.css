@@ -1,0 +1,97 @@
+.header{
+  position: fixed;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.648);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.743);
+  margin-bottom: 50px;
+}
+.logo{
+  font-size: 26px;
+}
+nav{
+  display: flex;
+}
+nav a{
+  display: block;
+  text-align: center;
+  margin: 0 20px;
+  width: 120px;
+  color: white;
+  position: relative;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  font-size: 25px;
+  transition: .3s;
+  z-index: 10;
+  overflow: hidden;
+  padding: 6px 0;
+}
+nav a::after{
+  position: absolute;
+  content: '';
+  background: white;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+  z-index: -1;
+  overflow: hidden;
+  transition: .3s;
+}
+nav a::before{
+  position: absolute;
+  content: '';
+  background: white;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  z-index: -1;
+  overflow: hidden;
+  transition: .3s;
+}
+nav a:hover::after{
+  transform: translateX(0);
+  transition: .3s;
+}
+nav a:hover::before{
+  transform: translateX(0);
+  transition: .3s;
+}
+nav a:hover{
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  transition: .3s;
+  color: black;
+}
+.cart{
+  position: relative;
+}
+.cart img{
+  width: 40px;
+  height: 40px;
+  margin-right: 40px;
+}
+.cart:hover{
+  cursor: pointer;
+}
+.cart span{
+  position: absolute;
+  right: 5px;
+  top: -12px;
+  font-size: 20px;
+  color: black;
+  background: white;
+  width: 33px;
+  padding: 6px 0;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
+  z-index: 100;
+}

@@ -1,0 +1,28 @@
+.guitar{
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+.guitar__item{
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.767);
+  padding: 20px;
+}
+.guitar img{
+  display: block;
+  margin: 0 auto;
+  height: 350px;
+  margin-bottom: 20px;
+}
+.guitar p{
+  margin: 10px 0;
+}
+.guitar button{
+  font-size: 18px;
+  color: white;
+  background: #196124de;
+  padding: 7px 15px;
+  border-radius: 20px;
+  margin-top: 20px;
+}

@@ -1,0 +1,73 @@
+.cart{
+  position: fixed;
+  width: 30%;
+  height: 750px;
+  background: rgba(0, 0, 0, 0.866);
+  right: 0;
+  top: 93px;
+  color: white;
+  padding: 20px;
+  transform: translateX(100%);
+  transition: .5s;
+  border-left: 1px solid rgba(255, 255, 255, 0.743);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.743);
+}
+.cart.active{
+  display: block;
+  transition: .5s;
+  transform: translateX(0);
+}
+.cart__title{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.cart__items{
+  height: 600px;
+  overflow-y: auto;
+}
+.cart__item{
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.743);
+  padding: 10px;
+  margin: 10px 0;
+  background: black;
+}
+.cart__item .delete{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  opacity: .8;
+}
+.cart__item .delete:hover{
+  cursor: pointer;
+}
+.cart__item img{
+  width: 120px;
+  border-radius: 50%;
+}
+.cart__item__info{
+  text-align: left;
+  font-size: 23px;
+  margin-left: 30px;
+}
+.cart__item__info p{
+  margin: 5px 0;
+}
+.confirm{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 30px;
+}
+.confirm button{
+  padding: 5px 30px;
+  font-size: 20px;
+  background: #196124de;
+  color: white;
+}
